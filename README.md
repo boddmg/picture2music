@@ -1,9 +1,7 @@
-﻿picture2music
+picture2music  
 =============
->
->As the title
->使用说明：
->1.首先你得装个python2.7，连带装上numpy
->2.把图片文件拖放在pic2music.py上，执行
->3.音乐会生成在图片文件所在目录上，是midi格式的
->4.enjoy it
+##使用说明  
+直接双击运行  
+    dyn_pic2music.py  
+点击键盘上的 s 键可以保存图像并生成音乐。  
+使用 midi_player 文件夹里的 midi 音乐播放器播放即可。  
