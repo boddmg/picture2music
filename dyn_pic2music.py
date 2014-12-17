@@ -25,7 +25,7 @@ shots = 0
  
 while 1:
     camshot = cam.getImage()
-    camshot = camshot.resize((640,480), Image.ANTIALIAS)
+    #camshot = camshot.resize((640,480), Image.ANTIALIAS)
     res = (640,480)
     camshot = ImageEnhance.Brightness(camshot).enhance(brightness)
     camshot = ImageEnhance.Contrast(camshot).enhance(contrast)
