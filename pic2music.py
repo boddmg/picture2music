@@ -18,11 +18,12 @@ def pic2music(imgfile):
 
         notes1=NoteSeq("")
         diao=int((lightness*5))
+        octave = int((lightness*10))
         for i in imageAttr:
                 if (j+1)%sizes<sizes:
                         if abs(imageAttr[j%sizes]-imageAttr[(j+1)%sizes])>3:
                                 if((j%12)%2==0):
-                                        notes1=notes1+Note(value=sett1[diao][random.randint(0,4)], octave=random.randint(diao+2,diao+3),dur=0.08*random.randint(0,4), volume=127)
+                                        notes1=notes1+Note(value=sett1[diao][random.randint(0,4)], octave=random.randint(octave,octave+3),dur=0.08*random.randint(0,4), volume=127)
 
                 #	else :
                 #		notes1=notes1+Note(value=1, octave=1,dur=0.01, volume=0)
