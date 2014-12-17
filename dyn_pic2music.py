@@ -8,7 +8,9 @@ import pic2music
 res = None
 pygame.init()
 cam = Device()
-screen = pygame.display.set_mode((640,480))
+camshot = cam.getImage()
+res = camshot.size
+screen = pygame.display.set_mode(res)
 pygame.display.set_caption('Webcam')
 pygame.font.init()
 font = pygame.font.SysFont("Courier",11)
@@ -25,8 +27,6 @@ shots = 0
  
 while 1:
     camshot = cam.getImage()
-    #camshot = camshot.resize((640,480), Image.ANTIALIAS)
-    res = (640,480)
     camshot = ImageEnhance.Brightness(camshot).enhance(brightness)
     camshot = ImageEnhance.Contrast(camshot).enhance(contrast)
     for event in pygame.event.get():
