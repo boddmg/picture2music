@@ -1,0 +1,7 @@
+/.idea
+/dataset/music-origin/*.wav
+/genres/blues/*.au
+*.au
+*.params
+*.wav
+*.pyc
